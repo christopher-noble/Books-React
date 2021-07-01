@@ -1,5 +1,3 @@
-import Spinner from './Spinner'
-import 'react-spinning-wheel/dist/style.css';
 import React from 'react';
 import { Component } from 'react';
 import axios from 'axios';
@@ -67,16 +65,6 @@ class App extends Component
     );
   }
 
-  // ifLoading = () =>
-  // {
-  //   if(this.state.isLoading)
-  //   {
-  //     return(
-  //       <Spinner />
-  //     )
-  //   }
-  // }
-    
   render()
   {
     return (
@@ -92,9 +80,6 @@ class App extends Component
             onChange={this.handleChange} />
           <button type="submit">Go!</button>
         </form>
-
-        {/* <h4>{this.ifLoading}</h4> */}
-
 
         <div className="bookList">
           {this.state.bookList.map(book => (
